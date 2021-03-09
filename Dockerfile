@@ -25,6 +25,6 @@ RUN apt-get update \
 
 RUN git clone https://github.com/hzeller/rpi-rgb-led-matrix.git \
     && cd rpi-rgb-led-matrix\
-    && sudo make -C examples-api-use\
-    && sudo make build-python PYTHON=$(which python3)\
-    && sudo make install-python PYTHON=$(which python3)
+    && make -C examples-api-use\
+    && make build-python PYTHON=$(which python3)\
+    && make install-python PYTHON=$(which python3)
