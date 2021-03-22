@@ -28,3 +28,9 @@ RUN git clone https://github.com/hzeller/rpi-rgb-led-matrix.git \
     && make -C examples-api-use\
     && make build-python PYTHON=$(which python3)\
     && make install-python PYTHON=$(which python3)
+
+WORKDIR /app
+
+RUN git clone https://github.com/breiti78/infopanel.git\
+    && cd infopanel\
+    && python3 setup.py install
