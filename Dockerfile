@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get -y install apt-utils  \
     && apt-get install make \
     && apt-get install build-essential -y \
-    && apt-get install libyaml-dev python3-setuptools git python3-matplotlib -y
+    && apt-get install libyaml-dev python3-setuptools git python3-matplotlib python3-dev -y
 
 
 # copy the content of the local src directory to the working directory
