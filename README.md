@@ -1,5 +1,5 @@
 # rpi-rgb-led-matrix-docker
-Docker base container for rpi-rgb-led-matrix
+Docker base container for rpi-rgb-led-matrix based on https://github.com/hzeller/rpi-rgb-led-matrix
 
 # Build Status
 
