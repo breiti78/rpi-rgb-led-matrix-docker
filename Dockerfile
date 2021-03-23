@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM arm32v7/python:3.7-slim-buster
+FROM arm32v7/python:3.6-slim-buster
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -28,9 +28,3 @@ RUN git clone https://github.com/hzeller/rpi-rgb-led-matrix.git \
     && make -C examples-api-use\
     && make build-python PYTHON=$(which python3)\
     && make install-python PYTHON=$(which python3)
-
-WORKDIR /app
-
-RUN git clone https://github.com/breiti78/infopanel.git\
-    && cd infopanel\
-    && python3 setup.py install
