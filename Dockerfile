@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM arm32v7/python:3.6-slim-buster
+FROM arm32v7/python:3.6-buster
 
 ARG DEBIAN_FRONTEND=noninteractive
 
