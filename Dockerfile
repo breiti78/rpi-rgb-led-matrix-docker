@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM arm32v7/python:3.7-buster
+FROM arm32v7/python:3.9-bullseye
 
 ARG DEBIAN_FRONTEND=noninteractive
 
