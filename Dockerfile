@@ -11,7 +11,7 @@ WORKDIR /app
 # install dependencies
 RUN apk add --no-cache tesseract-ocr python3 py3-numpy && \
     pip3 install --upgrade pip setuptools wheel && \
-    apk add --no-cache --virtual .build-deps gcc g++ zlib-dev make git python3-dev py-numpy-dev jpeg-dev && \
+    apk add --no-cache --virtual .build-deps gcc g++ zlib-dev make git python3-dev jpeg-dev && \
     pip3 install matplotlib && \
     apk del .build-deps
 
